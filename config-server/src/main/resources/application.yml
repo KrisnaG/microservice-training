@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/KrisnaG/ecommerce_microservices_config_repo.git
+          username: KrisnaG
+          password: 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
+          clone-on-start: true
+          skip-ssl-validation: true
+server:
+  port: 8888
